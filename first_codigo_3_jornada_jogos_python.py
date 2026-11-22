@@ -16,14 +16,21 @@ while running:
 
     screen.fill((25, 25, 5)) 
 
-    for i in range(8):
-        pg.draw.circle(screen, (color1), (100 + i * 70,  240), 7)
+    pg.draw.rect(screen, (40, 44, 70), (100, 180, 440, 300))
+    for col in range(8):
+        m = 130 + col * 50
+        n = 210
+        for row in range(4):
+            pg.draw.rect(screen, (color2), (m, 210 + row * 60, 20, 20))
 
-    for x in range(60, 600, 40):
-        pg.draw.ellipse(screen, (color2), (x, 100, 12, 5))
+    # for i in range(8):
+    #     pg.draw.circle(screen, (color1), (100 + i * 70,  240), 7)
 
-    for h in range(6):
-        pg.draw.rect(screen, (color2[0], 80 + h * 30, 100 + h * 20), (50 + h * 80, 300, 40, 40))
+    # for x in range(60, 600, 40):
+    #     pg.draw.ellipse(screen, (color2), (x, 100, 12, 5))
+
+    # for h in range(6):
+    #     pg.draw.rect(screen, (color2[0], 80 + h * 30, 100 + h * 20), (50 + h * 80, 300, 45, 40))
 
     # pg.draw.circle(screen, (0, 0, 255), (600, 240), 15)
     # pg.draw.circle(screen, (0, 0, 255), (500, 240), 7)
