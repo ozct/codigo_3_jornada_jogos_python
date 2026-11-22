@@ -6,6 +6,7 @@ pg.display.set_caption("first_codigo_3_jornada_jogos_python.py")
 clock = pg.time.Clock()
 
 color1 = (200, 230, 250)
+color2 = (250, 160, 60)
 
 running = True
 while running:
@@ -16,7 +17,11 @@ while running:
     screen.fill((25, 25, 5)) 
 
     for i in range(8):
-        pg.draw.circle(screen, (color1), (100 + i * 70,  240), 20)
+        pg.draw.circle(screen, (color1), (100 + i * 70,  240), 7)
+
+    for x in range(60, 600, 40):
+        pg.draw.ellipse(screen, (color2), (x, 100, 12, 5))
+
     # pg.draw.circle(screen, (0, 0, 255), (600, 240), 15)
     # pg.draw.circle(screen, (0, 0, 255), (500, 240), 7)
     # pg.draw.circle(screen, (0, 0, 255), (405, 240), 11)
