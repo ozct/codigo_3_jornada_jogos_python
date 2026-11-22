@@ -22,6 +22,9 @@ while running:
     for x in range(60, 600, 40):
         pg.draw.ellipse(screen, (color2), (x, 100, 12, 5))
 
+    for h in range(6):
+        pg.draw.rect(screen, (color2[0], 80 + h * 30, 100 + h * 20), (50 + h * 80, 300, 40, 40))
+
     # pg.draw.circle(screen, (0, 0, 255), (600, 240), 15)
     # pg.draw.circle(screen, (0, 0, 255), (500, 240), 7)
     # pg.draw.circle(screen, (0, 0, 255), (405, 240), 11)
